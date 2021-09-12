@@ -1,6 +1,10 @@
 # SolastaFactionRelics
 
-My Mod Description
+The Scavengers have found a cache of Imperial Ceremonial Longswords. They are willing to sell them to you for their metal value.
+
+The relics are worth 10 Lore points each, and can be purchased from the Caer Lem Outpost store once it becomes available.
+
+If you select the Maximum Faction option in the settings menu, the relics are worth 100 Lore points each and will max out your Faction reputation.
 
 # How to Compile
 
