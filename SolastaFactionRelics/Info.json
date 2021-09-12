@@ -1,0 +1,13 @@
+{
+	"Id": "SolastaFactionRelics",
+	"DisplayName": "SolastaFactionRelics",
+	"Author": "Silvergriffon",
+	"Version": "0.0.1",
+	"ManagerVersion": "0.23.4",
+	"Requirements": [ "SolastaModApi" ],
+	"LoadAfter": [ "SolastaModApi" ],
+	"AssemblyName": "SolastaFactionRelics.dll",
+	"EntryMethod": "SolastaFactionRelics.Main.Load",
+	"Repository": "https://raw.githubusercontent.com/Silvergriffon/SolastaFactionRelics/main/SolastaFactionRelics/Repository.json",
+	"HomePage": "https://www.nexusmods.com/solastacrownofthemagister/mods/##"
+}

@@ -1,0 +1,2 @@
+SolastaFactionRelics/&ImperialSwordRelicTitle	Imperial Ceremonial Longsword
+SolastaFactionRelics/&ImperialSwordRelicDescription	The Scavengers have found a cache of Imperial Ceremonial Longswords. They are willing to sell them to you for their metal value.
