@@ -79,13 +79,6 @@ namespace SolastaFactionRelics
             }
             MerchantDefinition add_stock_CaerLem = DatabaseHelper.MerchantDefinitions.Store_Merchant_Caer_Lem_Outpost;
             add_stock_CaerLem.StockUnitDescriptions.Add(ImperialSwordRelic_stock);
-/*            if (Main.Settings.addToGorim == true)
-            {
-                MerchantDefinition add_stock_Gorim = DatabaseHelper.MerchantDefinitions.Store_Merchant_Gorim_Ironsoot_Cyflen_GeneralStore;
-                add_stock_Gorim.StockUnitDescriptions.Add(ImperialSwordRelic_stock);
-                return;
-            }
-*/
         }
     }
 }
