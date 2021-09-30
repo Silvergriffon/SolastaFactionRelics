@@ -15,7 +15,6 @@ namespace SolastaFactionRelics.Menus.Viewers
             if (Mod == null || !Mod.Enabled) return;
 
             UI.Toggle("Maximum Faction", ref Main.Settings.maxFaction, 0, UI.AutoWidth());
-            // UI.Toggle("Add to Gorim", ref Main.Settings.addToGorim, 0, UI.AutoWidth());
             UI.Toggle("Restock Relics", ref Main.Settings.relicRestock, 0, UI.AutoWidth());
         }
     }
