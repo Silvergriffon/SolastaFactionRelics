@@ -2,7 +2,7 @@
 	"Id": "SolastaFactionRelics",
 	"DisplayName": "SolastaFactionRelics",
 	"Author": "Silvergriffon",
-	"Version": "0.0.1",
+	"Version": "0.0.2",
 	"ManagerVersion": "0.23.4",
 	"Requirements": [ "SolastaModApi" ],
 	"LoadAfter": [ "SolastaModApi" ],

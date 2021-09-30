@@ -70,8 +70,22 @@ namespace SolastaFactionRelics
             ImperialSwordRelic_stock.SetMaxAmount(4);
             ImperialSwordRelic_stock.SetInitialized(true);
             ImperialSwordRelic_stock.SetItemDefinition(SolastaFactionRelics.Builders.ImperialSwordRelicBuilder.ImperialSwordRelic);
-            MerchantDefinition add_ImperialSwordRelic = DatabaseHelper.MerchantDefinitions.Store_Merchant_Caer_Lem_Outpost;
-            add_ImperialSwordRelic.StockUnitDescriptions.Add(ImperialSwordRelic_stock);
+            if (Main.Settings.relicRestock == true)
+            {
+                ImperialSwordRelic_stock.SetReassortAmount(1);
+                ImperialSwordRelic_stock.SetReassortRateType(RuleDefinitions.DurationType.Day);
+                ImperialSwordRelic_stock.SetReassortRateValue(1);
+                ImperialSwordRelic_stock.SetMinAmount(1);
+            }
+            MerchantDefinition add_stock_CaerLem = DatabaseHelper.MerchantDefinitions.Store_Merchant_Caer_Lem_Outpost;
+            add_stock_CaerLem.StockUnitDescriptions.Add(ImperialSwordRelic_stock);
+/*            if (Main.Settings.addToGorim == true)
+            {
+                MerchantDefinition add_stock_Gorim = DatabaseHelper.MerchantDefinitions.Store_Merchant_Gorim_Ironsoot_Cyflen_GeneralStore;
+                add_stock_Gorim.StockUnitDescriptions.Add(ImperialSwordRelic_stock);
+                return;
+            }
+*/
         }
     }
 }

@@ -15,17 +15,17 @@ namespace SolastaFactionRelics.Builders
             Definition.SetRequiresIdentification(false);
             Definition.SetRequiresAttunement(false);
             Definition.SetInDungeonEditor(false);
+            Definition.ItemTags.Clear();
+            Definition.ItemTags.Add("Metal");
             Definition.SetIsFactionRelic(true);
             Definition.SetFactionRelicDescription(DatabaseHelper.ItemDefinitions.CaerLem_Gate_Plaque.FactionRelicDescription);
             if (Main.Settings.maxFaction == false)
             {
                 Definition.FactionRelicDescription.SetLoreValue(10);
-                return;
             }
             if (Main.Settings.maxFaction == true)
             {
                 Definition.FactionRelicDescription.SetLoreValue(100);
-                return;
             }
             
 
