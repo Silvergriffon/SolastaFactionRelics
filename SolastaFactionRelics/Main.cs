@@ -64,21 +64,7 @@ namespace SolastaFactionRelics
 
         internal static void OnGameReady()
         {
-            StockUnitDescription ImperialSwordRelic_stock = new StockUnitDescription();
-            ImperialSwordRelic_stock.SetFactionStatus("Alliance");
-            ImperialSwordRelic_stock.SetInitialAmount(4);
-            ImperialSwordRelic_stock.SetMaxAmount(4);
-            ImperialSwordRelic_stock.SetInitialized(true);
-            ImperialSwordRelic_stock.SetItemDefinition(SolastaFactionRelics.Builders.ImperialSwordRelicBuilder.ImperialSwordRelic);
-            if (Main.Settings.relicRestock == true)
-            {
-                ImperialSwordRelic_stock.SetReassortAmount(1);
-                ImperialSwordRelic_stock.SetReassortRateType(RuleDefinitions.DurationType.Day);
-                ImperialSwordRelic_stock.SetReassortRateValue(1);
-                ImperialSwordRelic_stock.SetMinAmount(1);
-            }
-            MerchantDefinition add_stock_CaerLem = DatabaseHelper.MerchantDefinitions.Store_Merchant_Caer_Lem_Outpost;
-            add_stock_CaerLem.StockUnitDescriptions.Add(ImperialSwordRelic_stock);
+
         }
     }
 }

@@ -1,4 +1,5 @@
 using HarmonyLib;
+using SolastaFactionRelics.Models;
 
 namespace SolastaFactionRelics.Patches
 {
@@ -9,7 +10,7 @@ namespace SolastaFactionRelics.Patches
         {
             internal static void Postfix()
             {
-                Main.OnGameReady();
+                RelicBuilder.Load();
             }
         }
     }
