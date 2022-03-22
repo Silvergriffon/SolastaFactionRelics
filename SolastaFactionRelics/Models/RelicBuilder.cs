@@ -29,14 +29,8 @@ namespace SolastaFactionRelics.Models
 				Definition.ItemTags.Add("Metal");
 				Definition.SetIsFactionRelic(true);
 				Definition.SetFactionRelicDescription(CaerLem_Gate_Plaque.FactionRelicDescription);
-				if (!Main.Settings.maxFaction)
-				{
-					Definition.FactionRelicDescription.SetLoreValue(10);
-				}
-				if (Main.Settings.maxFaction)
-				{
-					Definition.FactionRelicDescription.SetLoreValue(100);
-				}
+				Definition.FactionRelicDescription.SetLoreValue(10);
+
 				
 				var stockRelics = new StockUnitDescription();
 				
@@ -46,12 +40,10 @@ namespace SolastaFactionRelics.Models
 				stockRelics.SetFactionStatus("Indifference");
 				stockRelics.SetMaxAmount(4);
 				stockRelics.SetMinAmount(1);
-				if (Main.Settings.relicRestock)
-				{
-					stockRelics.SetReassortAmount(1);
-					stockRelics.SetReassortRateType(RuleDefinitions.DurationType.Day);
-					stockRelics.SetReassortRateValue(1);
-				}
+				stockRelics.SetReassortAmount(4);
+				stockRelics.SetReassortRateType(RuleDefinitions.DurationType.Day);
+				stockRelics.SetReassortRateValue(1);
+				
 				
 				Store_Merchant_Caer_Lem_Outpost.StockUnitDescriptions.Add(stockRelics);
 				
