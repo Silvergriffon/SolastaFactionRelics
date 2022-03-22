@@ -1,6 +1,9 @@
 using UnityModManagerNet;
 using ModKit;
 using static SolastaFactionRelics.Main;
+using UnityEngine;
+using UnityEngine.UI;
+
 
 namespace SolastaFactionRelics.Menus.Viewers
 {
@@ -10,12 +13,22 @@ namespace SolastaFactionRelics.Menus.Viewers
 
         public int Priority => 1;
 
+
         public void OnGUI(UnityModManager.ModEntry modEntry)
         {
-            if (Mod == null || !Mod.Enabled) return;
+            if (Main.Mod == null || !Main.Mod.Enabled) return;
 
-            UI.Toggle("Maximum Faction", ref Main.Settings.maxFaction, 0, UI.AutoWidth());
-            UI.Toggle("Restock Relics", ref Main.Settings.relicRestock, 0, UI.AutoWidth());
+            /*bool toggle;
+
+            UI.Label("");
+            toggle = Main.Settings.maxFaction;
+            if (UI.Toggle("Maximum Faction", ref toggle, UI.AutoWidth()))
+            {
+                Main.Settings.maxFaction = toggle;
+            }
+            */
+  
+            
         }
     }
 }
