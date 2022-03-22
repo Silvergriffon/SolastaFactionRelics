@@ -9,8 +9,7 @@ namespace SolastaFactionRelics
 
     public class Settings : UnityModManager.ModSettings
     {
-        public bool maxFaction = false;
-        public bool relicRestock = false;
+        //public bool maxFaction { get; set; }
 
     }
 }

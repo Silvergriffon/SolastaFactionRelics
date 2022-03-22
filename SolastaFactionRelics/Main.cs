@@ -3,8 +3,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using UnityModManagerNet;
-using SolastaModApi;
-using SolastaModApi.Extensions;
 using ModKit;
 using ModKit.Utility;
 
